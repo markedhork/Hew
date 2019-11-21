@@ -11,6 +11,9 @@ bool Engine::Initialize(HINSTANCE hInstance, std::string window_title, std::stri
 	{
 		return false;
 	}
+
+	pScene = new Lobby;
+
 	return true;
 }
 

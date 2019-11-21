@@ -39,7 +39,6 @@ void Graphics::RenderFrame()
 		fpsCounter = 0;
 		fpsTimer.Restart();
 	} 
-
 	
 	//Render Draw Data
 	this->pD3DDevice->Present(NULL, NULL, NULL, NULL);

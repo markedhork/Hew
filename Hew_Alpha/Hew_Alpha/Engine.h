@@ -1,7 +1,11 @@
 #pragma once
 #include "WindowContainer.h"
 #include "Timer.h"
-#include "Network\Network.h"
+#include "Network/Network.h"
+#include "Scene/Title.h"
+#include "Scene/Lobby.h"
+#include "Scene/Game1.h"
+#include "Scene/Game2.h"
 
 class Engine :WindowContainer
 {
@@ -12,5 +16,6 @@ public:
 	void RenderFrame();
 private:
 	Timer timer;
-	Network network;
+	Network* network;
+	SceneMgr* pScene;
 };
